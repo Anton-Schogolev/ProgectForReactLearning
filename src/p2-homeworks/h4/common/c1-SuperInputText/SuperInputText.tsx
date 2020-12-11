@@ -39,24 +39,13 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         && onEnter // и есть пропс onEnter
         && onEnter(); // то вызвать его
     }
-    const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ""}`;
-
-    const finalInputClassName = `${error ? s.errorInput : className}`; // need to fix with (?:) and s.superInput
+    // const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ""}`;
+    //
+    // const finalInputClassName = `${error ? s.errorInput : className}`; // need to fix with (?:) and s.superInput
     const labelClass = `${s.inp} ${className ? className : ""}`
     label = label ? label : "Input"
     return (
         <>
-            {/*{className ? <>*/}
-            {/*        <input*/}
-            {/*            type={"text"}*/}
-            {/*            onChange={onChangeCallback}*/}
-            {/*            onKeyPress={onKeyPressCallback}*/}
-            {/*            className={finalInputClassName}*/}
-
-            {/*            {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)*/}
-            {/*        />*/}
-            {/*        {error && <span className={finalSpanClassName}>{error}</span>}*/}
-            {/*    </> :*/}
                 <label htmlFor="inp" className={labelClass}>
                     <input
                         type="text"
@@ -68,9 +57,8 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
                         className={error ? s.errorL : ""}
                     />
                     <span className={error ? `${s.errorL} ${s.label}` : s.label}>{error ? error : label}</span>
-                    <span className={s.focusBg}></span>
+                    <span className={s.focusBg}/>
                 </label>
-                {/*}*/}
         </>
     );
 }

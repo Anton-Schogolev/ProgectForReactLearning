@@ -1,10 +1,16 @@
 import React from "react";
+import s from "./Header.module.css"
 
-function Header() {
-    return (
-        <div>
+type PropsType={
+    makeHeaderBe:boolean
+}
 
-        </div>
+function Header({makeHeaderBe}:PropsType) {
+    return (<>
+            {makeHeaderBe && <div className={s.container}>
+                preJunior junior junior+
+            </div>}
+        </>
     );
 }
 

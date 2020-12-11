@@ -1,0 +1,8 @@
+.someClass {
+    margin-left: 10px;
+}
+
+.error {
+    margin-left: 10px;
+    border: 1px solid red;
+}

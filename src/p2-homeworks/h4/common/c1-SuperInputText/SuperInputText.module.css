@@ -1,0 +1,125 @@
+.superInput {
+    border: 1px solid #cccccc; /*цвет рамки*/
+    border-radius: 3px; /*закругление углов (общее)*/
+    -webkit-border-radius: 3px; /*закругление углов (Google Chrome)*/
+    -moz-border-radius: 3px; /*закругление углов (FireFox)*/
+    -khtml-border-radius: 3px; /*закругление углов (Safari)*/
+    background: #ffffff !important; /* желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым*/
+    outline: none; /* удаляет обводку в браузерах хром(желтая) и сафари(синяя)*/
+    height: 24px; /* высота на свое усмотрение*/
+    width: 120px; /* ширина на свое усмотрение*/
+    color: #cccccc; /*цвет шрифта в обычном состоянии*/
+    font-size: 11px; /* Размер шрифта*/
+    font-family: Tahoma; /* Стиль шрифта*/
+}
+
+.errorInput {
+    border: 3px solid lime;
+    background: red;
+}
+
+.error {
+    color: #ff0059;
+}
+.inp {
+    display: flex;
+    position: relative;
+    /*margin: auto;*/
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.inp .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+.inp .focusBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+}
+.inp input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+.inp input:hover {
+    background: rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+.inp input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.inp input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+.inp input:focus + .label {
+    color: #0077FF;
+    -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+.inp input:focus + .label + .focusBg {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+
+
+
+.inp input.errorL:focus {
+    box-shadow: inset 0 -2px 0 #ff0059;
+}
+.inp input.errorL:focus + .label {
+    color: #ff0059;
+}
+
+.inp input.errorL {
+    box-shadow: inset 0 -1px 0 rgba(255, 0, 89, 0.3);
+}
+.inp input.errorL:hover {
+    box-shadow: inset 0 -1px 0 rgba(255, 0, 89, 0.5);
+}
+.inp input.errorL:not(:placeholder-shown) + .label {
+    color: rgba(255, 0, 89, 0.5);
+}
+.inp .label.errorL {
+    color: rgb(255, 0, 89);
+}

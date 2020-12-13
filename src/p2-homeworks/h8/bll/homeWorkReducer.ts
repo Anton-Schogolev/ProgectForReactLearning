@@ -8,6 +8,7 @@ export const homeWorkReducer = (state: any, action: any): any => {
 
             return state
         }
-        default: return state
+        default:
+            return state
     }
 };

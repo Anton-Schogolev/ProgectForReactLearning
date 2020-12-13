@@ -1,20 +1,23 @@
 
 button.super {
     background-color: #f1f1f1;
-    border: rgba(0,0,0,0.5) 2px solid;
+    border: rgba(0, 0, 0, 0.5) 2px solid;
     outline: 0;
     font-family: monospace;
     cursor: pointer;
     border-radius: 5px;
 }
+
 button.super:hover {
     background: #000000;
     color: white;
 }
+
 button.super:focus {
     background: #000000;
     color: white;
 }
+
 button.super:active {
     border: black 2px solid;
     background-color: #fff;

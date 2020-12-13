@@ -4,18 +4,18 @@ import Routes from "./Routes";
 import {HashRouter} from "react-router-dom";
 
 function HW5() {
-    const [makeHeaderBe,setMakeHeaderBe] = useState<boolean>(true)
-    const mouseMoveZhdun=(event:MouseEvent<HTMLDivElement>) => {
-        if(event.pageY<61){
+    const [makeHeaderBe, setMakeHeaderBe] = useState<boolean>(true)
+    const mouseMoveZhdun = (event: MouseEvent<HTMLDivElement>) => {
+        if (event.pageY < 41) {
             setMakeHeaderBe(true)
-        }
-        else setMakeHeaderBe(false)
+        } else setMakeHeaderBe(false)
     }
     return (
         <div onMouseMove={mouseMoveZhdun}>
             {/*в gh-pages лучше работает HashRouter*/}
             <HashRouter>
                 <Header makeHeaderBe={makeHeaderBe}/>
+                <div style={{height: "40px"}}/>
                 <Routes/>
             </HashRouter>
         </div>

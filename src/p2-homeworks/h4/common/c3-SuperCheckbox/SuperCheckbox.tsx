@@ -25,7 +25,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     }
 
     const finalInputClassName = `${s.checkbox} ${className ? className : ""}`;
-    const finalSpanClassName = `${!restProps.checked?s.span:s.line}`
+    const finalSpanClassName = `${!restProps.checked ? s.span : s.line}`
     return (
         <label>
             <input

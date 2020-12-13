@@ -46,19 +46,19 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     label = label ? label : "Input"
     return (
         <>
-                <label htmlFor="inp" className={labelClass}>
-                    <input
-                        type="text"
-                        id="inp"
-                        placeholder="&nbsp;"
-                        onChange={onChangeCallback}
-                        onKeyPress={onKeyPressCallback}
-                        {...restProps}
-                        className={error ? s.errorL : ""}
-                    />
-                    <span className={error ? `${s.errorL} ${s.label}` : s.label}>{error ? error : label}</span>
-                    <span className={s.focusBg}/>
-                </label>
+            <label htmlFor="inp" className={labelClass}>
+                <input
+                    type="text"
+                    id="inp"
+                    placeholder="&nbsp;"
+                    onChange={onChangeCallback}
+                    onKeyPress={onKeyPressCallback}
+                    {...restProps}
+                    className={error ? s.errorL : ""}
+                />
+                <span className={error ? `${s.errorL} ${s.label}` : s.label}>{error ? error : label}</span>
+                <span className={s.focusBg}/>
+            </label>
         </>
     );
 }

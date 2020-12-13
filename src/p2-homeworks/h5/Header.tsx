@@ -1,14 +1,24 @@
 import React from "react";
 import s from "./Header.module.css"
+import {NavLink} from "react-router-dom";
+import {PATH} from "./Routes";
 
-type PropsType={
-    makeHeaderBe:boolean
+type PropsType = {
+    makeHeaderBe: boolean
 }
 
-function Header({makeHeaderBe}:PropsType) {
+function Header({makeHeaderBe}: PropsType) {
     return (<>
             {makeHeaderBe && <div className={s.container}>
-                preJunior junior junior+
+                <NavLink to={PATH.PRE_JUNIOR} activeClassName={s.active}>
+                    <div className={s.item}>preJunior</div>
+                </NavLink>
+                <NavLink to={PATH.JUNIOR} activeClassName={s.active}>
+                    <div className={s.item}>junior</div>
+                </NavLink>
+                <NavLink to={PATH.JUNIOR_PLUS} activeClassName={s.active}>
+                    <div className={s.item}>junior+</div>
+                </NavLink>
             </div>}
         </>
     );

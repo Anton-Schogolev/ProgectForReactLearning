@@ -2,11 +2,11 @@ import React, {useState} from "react";
 import Affairs from "./Affairs";
 
 // types
-export type AffairPriorityType = "high"|"middle"|"low";
+export type AffairPriorityType = "high" | "middle" | "low";
 export type AffairType = {
-    _id:number
-    name:string
-    priority:AffairPriorityType
+    _id: number
+    name: string
+    priority: AffairPriorityType
 };
 export type FilterType = "all" | AffairPriorityType;
 
@@ -23,10 +23,10 @@ const defaultAffairs: Array<AffairType> = [
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     if (filter === "all") return affairs;
-    else return affairs.filter(aff=>aff.priority===filter); // need to fix
+    else return affairs.filter(aff => aff.priority === filter); // need to fix
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
-    return affairs.filter(aff=>aff._id!==_id); // need to fix
+    return affairs.filter(aff => aff._id !== _id); // need to fix
 }
 
 

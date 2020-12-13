@@ -21,6 +21,7 @@
 .error {
     color: #ff0059;
 }
+
 .inp {
     display: flex;
     position: relative;
@@ -30,6 +31,7 @@
     border-radius: 3px;
     overflow: hidden;
 }
+
 .inp .label {
     position: absolute;
     top: 20px;
@@ -45,6 +47,7 @@
     transition: all 0.2s ease;
     pointer-events: none;
 }
+
 .inp .focusBg {
     position: absolute;
     top: 0;
@@ -58,6 +61,7 @@
     -webkit-transform-origin: left;
     transform-origin: left;
 }
+
 .inp input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -75,25 +79,30 @@
     -webkit-transition: all 0.15s ease;
     transition: all 0.15s ease;
 }
+
 .inp input:hover {
     background: rgba(0, 0, 0, 0.08);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
+
 .inp input:not(:placeholder-shown) + .label {
     color: rgba(0, 0, 0, 0.5);
     -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
     transform: translate3d(0, -12px, 0) scale(0.75);
 }
+
 .inp input:focus {
     background: rgba(0, 0, 0, 0.05);
     outline: none;
     box-shadow: inset 0 -2px 0 #0077FF;
 }
+
 .inp input:focus + .label {
     color: #0077FF;
     -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
     transform: translate3d(0, -12px, 0) scale(0.75);
 }
+
 .inp input:focus + .label + .focusBg {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -102,11 +111,10 @@
 }
 
 
-
-
 .inp input.errorL:focus {
     box-shadow: inset 0 -2px 0 #ff0059;
 }
+
 .inp input.errorL:focus + .label {
     color: #ff0059;
 }
@@ -114,12 +122,15 @@
 .inp input.errorL {
     box-shadow: inset 0 -1px 0 rgba(255, 0, 89, 0.3);
 }
+
 .inp input.errorL:hover {
     box-shadow: inset 0 -1px 0 rgba(255, 0, 89, 0.5);
 }
+
 .inp input.errorL:not(:placeholder-shown) + .label {
     color: rgba(255, 0, 89, 0.5);
 }
+
 .inp .label.errorL {
     color: rgb(255, 0, 89);
 }

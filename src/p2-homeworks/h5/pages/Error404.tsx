@@ -1,6 +1,5 @@
 import React, {useState, MouseEvent} from "react";
 import s from "./Error404.module.css"
-import {Link} from "react-router-dom";
 
 type Coordinates = {
     'top': number
@@ -15,14 +14,12 @@ function Error404() {
     }
 
     return (
-        <Link to={"/"} style={{textDecoration: "none"}}>
-            <div className={s.container} onMouseMove={callback}>
-                <h1>404</h1>
-                <h2>Uh, Ohh</h2>
-                <h3>Sorry we cant find what you are looking for 'cuz its so dark in here</h3>
-                <div className={s.torch} style={coordinates}/>
-            </div>
-        </Link>
+        <div className={s.container} onMouseMove={callback}>
+            <h1>404</h1>
+            <h2>Uh, Ohh</h2>
+            <h3>Sorry we cant find what you are looking for 'cuz its so dark in here</h3>
+            <div className={s.torch} style={coordinates}/>
+        </div>
     );
 }
 

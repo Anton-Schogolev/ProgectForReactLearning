@@ -4,6 +4,7 @@
     background: #70a4ea;
     /*grid-area: navbar;*/
     position: fixed;
+    z-index: 1;
 }
 
 .item {

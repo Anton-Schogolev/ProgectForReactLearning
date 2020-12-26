@@ -1,5 +1,5 @@
 
-button.super {
+.super {
     background-color: #f1f1f1;
     border: rgba(0, 0, 0, 0.5) 2px solid;
     outline: 0;
@@ -8,23 +8,23 @@ button.super {
     border-radius: 5px;
 }
 
-button.super:hover {
+.super:hover {
     background: #000000;
     color: white;
 }
 
-button.super:focus {
+.super:focus {
     background: #000000;
     color: white;
 }
 
-button.super:active {
+.super:active {
     border: black 2px solid;
     background-color: #fff;
     color: #000000;
 }
 
-button.red:active {
+.red:active {
     background: red;
 }
 

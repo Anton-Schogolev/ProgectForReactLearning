@@ -30,23 +30,12 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         <label>
             <input
                 type="checkbox"
-                id="todo"
-                name="todo"
-                value="todo"
                 onChange={onChangeCallback}
                 className={finalInputClassName}
                 checked={restProps.checked}
 
                 {...restProps}
             />
-            {/*<input*/}
-            {/*    type={"checkbox"}*/}
-            {/*    onChange={onChangeCallback}*/}
-            {/*    className={finalInputClassName}*/}
-            {/*    checked={restProps.checked}*/}
-
-            {/*    {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)*/}
-            {/*/>*/}
             {children && <span className={finalSpanClassName}>{children}</span>}
         </label> // благодаря label нажатие на спан передастся в инпут
     );

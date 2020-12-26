@@ -49,7 +49,6 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
             <label htmlFor="inp" className={labelClass}>
                 <input
                     type="text"
-                    id="inp"
                     placeholder="&nbsp;"
                     onChange={onChangeCallback}
                     onKeyPress={onKeyPressCallback}

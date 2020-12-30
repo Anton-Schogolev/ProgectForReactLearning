@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ProgectForReactLearning/static/css/main.ee959860.chunk.css",
-    "main.js": "/ProgectForReactLearning/static/js/main.6d770db4.chunk.js",
-    "main.js.map": "/ProgectForReactLearning/static/js/main.6d770db4.chunk.js.map",
+    "main.js": "/ProgectForReactLearning/static/js/main.249e2c0b.chunk.js",
+    "main.js.map": "/ProgectForReactLearning/static/js/main.249e2c0b.chunk.js.map",
     "runtime-main.js": "/ProgectForReactLearning/static/js/runtime-main.bd88e229.js",
     "runtime-main.js.map": "/ProgectForReactLearning/static/js/runtime-main.bd88e229.js.map",
     "static/js/2.ca443e22.chunk.js": "/ProgectForReactLearning/static/js/2.ca443e22.chunk.js",
     "static/js/2.ca443e22.chunk.js.map": "/ProgectForReactLearning/static/js/2.ca443e22.chunk.js.map",
     "index.html": "/ProgectForReactLearning/index.html",
-    "precache-manifest.4722fb3394ef124446db4734424f2d58.js": "/ProgectForReactLearning/precache-manifest.4722fb3394ef124446db4734424f2d58.js",
+    "precache-manifest.a7829037597db57e74f7bfb63dc25f6c.js": "/ProgectForReactLearning/precache-manifest.a7829037597db57e74f7bfb63dc25f6c.js",
     "service-worker.js": "/ProgectForReactLearning/service-worker.js",
     "static/css/main.ee959860.chunk.css.map": "/ProgectForReactLearning/static/css/main.ee959860.chunk.css.map",
     "static/js/2.ca443e22.chunk.js.LICENSE.txt": "/ProgectForReactLearning/static/js/2.ca443e22.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bd88e229.js",
     "static/js/2.ca443e22.chunk.js",
     "static/css/main.ee959860.chunk.css",
-    "static/js/main.6d770db4.chunk.js"
+    "static/js/main.249e2c0b.chunk.js"
   ]
 }

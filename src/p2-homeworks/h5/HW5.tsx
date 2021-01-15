@@ -15,7 +15,6 @@ function HW5() {
             {/*в gh-pages лучше работает HashRouter*/}
             <HashRouter>
                 <Header makeHeaderBe={makeHeaderBe}/>
-                <div style={{height: "40px"}}/>
                 <Routes/>
             </HashRouter>
         </div>

@@ -20,6 +20,7 @@ function Header({makeHeaderBe}: PropsType) {
                     <div className={s.item}>junior+</div>
                 </NavLink>
             </div>}
+            <div className={s.empty}/>
         </>
     );
 }

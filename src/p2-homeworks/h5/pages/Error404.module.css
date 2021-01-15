@@ -1,6 +1,7 @@
 
 .container {
-    height: calc(100vh - 40px);
+    /*height: calc(100vh - 40px);*/
+    height: 100vh;
     background: url("https://wallpapercave.com/wp/6SLzBEY.jpg") no-repeat left top;
     background-size: cover;
     overflow: hidden;
@@ -8,6 +9,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin-top: -40px;
 }
 
 .container h1 {
@@ -41,7 +43,7 @@
 }
 
 .torch {
-    margin: -150px 0 0 -150px;
+    margin: -100px 0 0 -100px;
     width: 200px;
     height: 200px;
     box-shadow: 0 0 0 9999em #000000f7;

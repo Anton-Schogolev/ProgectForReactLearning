@@ -22,3 +22,7 @@
 .active > .item {
     background: #ffffff;
 }
+
+.empty {
+    height: 40px;
+}

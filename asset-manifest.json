@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/ProgectForReactLearning/static/css/main.9408e7eb.chunk.css",
-    "main.js": "/ProgectForReactLearning/static/js/main.bfdc46ad.chunk.js",
-    "main.js.map": "/ProgectForReactLearning/static/js/main.bfdc46ad.chunk.js.map",
+    "main.css": "/ProgectForReactLearning/static/css/main.4480fb24.chunk.css",
+    "main.js": "/ProgectForReactLearning/static/js/main.57221c24.chunk.js",
+    "main.js.map": "/ProgectForReactLearning/static/js/main.57221c24.chunk.js.map",
     "runtime-main.js": "/ProgectForReactLearning/static/js/runtime-main.bd88e229.js",
     "runtime-main.js.map": "/ProgectForReactLearning/static/js/runtime-main.bd88e229.js.map",
-    "static/js/2.0e16b6d3.chunk.js": "/ProgectForReactLearning/static/js/2.0e16b6d3.chunk.js",
-    "static/js/2.0e16b6d3.chunk.js.map": "/ProgectForReactLearning/static/js/2.0e16b6d3.chunk.js.map",
+    "static/css/2.ed590494.chunk.css": "/ProgectForReactLearning/static/css/2.ed590494.chunk.css",
+    "static/js/2.16d6c413.chunk.js": "/ProgectForReactLearning/static/js/2.16d6c413.chunk.js",
+    "static/js/2.16d6c413.chunk.js.map": "/ProgectForReactLearning/static/js/2.16d6c413.chunk.js.map",
     "index.html": "/ProgectForReactLearning/index.html",
-    "precache-manifest.0e6acb97949e84419bd076b7ee87ae95.js": "/ProgectForReactLearning/precache-manifest.0e6acb97949e84419bd076b7ee87ae95.js",
+    "precache-manifest.e6370f202f6bd5ae18c87d3198edda15.js": "/ProgectForReactLearning/precache-manifest.e6370f202f6bd5ae18c87d3198edda15.js",
     "service-worker.js": "/ProgectForReactLearning/service-worker.js",
-    "static/css/main.9408e7eb.chunk.css.map": "/ProgectForReactLearning/static/css/main.9408e7eb.chunk.css.map",
-    "static/js/2.0e16b6d3.chunk.js.LICENSE.txt": "/ProgectForReactLearning/static/js/2.0e16b6d3.chunk.js.LICENSE.txt"
+    "static/css/2.ed590494.chunk.css.map": "/ProgectForReactLearning/static/css/2.ed590494.chunk.css.map",
+    "static/css/main.4480fb24.chunk.css.map": "/ProgectForReactLearning/static/css/main.4480fb24.chunk.css.map",
+    "static/js/2.16d6c413.chunk.js.LICENSE.txt": "/ProgectForReactLearning/static/js/2.16d6c413.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bd88e229.js",
-    "static/js/2.0e16b6d3.chunk.js",
-    "static/css/main.9408e7eb.chunk.css",
-    "static/js/main.bfdc46ad.chunk.js"
+    "static/css/2.ed590494.chunk.css",
+    "static/js/2.16d6c413.chunk.js",
+    "static/css/main.4480fb24.chunk.css",
+    "static/js/main.57221c24.chunk.js"
   ]
 }
